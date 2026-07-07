@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff7300;
+  --secondary-color: #24344d;
+  --danger-color: #e74c3c;
+  --white: #fff;
+  --light-gray: #f4f4f4;
+  --gray: #888;
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--light-gray);
+  font-size: 1rem;
+}
+
+.promo-container .flash-sale-banner {
+  width: 100%;
+  min-height: 30vh;
+  background: linear-gradient(to right, #ff6200, #ff8c00);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 2rem 5vw;
+}
+
+.promo-container .banner-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 1em;
+}
+
+.promo-container .banner-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.promo-container .banner-note {
+  font-size: 1.2rem;
+}
+
+.product-card {
+  width: 90vw;
+  max-width: 30rem;
+  margin: 3rem auto 3rem;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.product-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.product-image {
+  width: 85%;
+  max-width: 15rem;
+}
+
+.discount {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--danger-color);
+  color: var(--white);
+  padding: 0.3em 0.6em;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.product-information {
+  margin-top: 0.5rem;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price-box {
+  margin-bottom: 0.5rem;
+}
+
+.current-price {
+  color: var(--danger-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.original-price {
+  color: var(--gray);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.cart-button {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2em;
+  background: var(--secondary-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background: #182638;
+}
