@@ -246,20 +246,16 @@ footer {
    line-height: 1.6;
    max-width: 350px;
 }
-.bottom {
-   width: var(--container);
-   margin: 0 auto;
-   padding: 25px 0;
-   border-top: 1px solid var(--border);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-.bottom p {
-   color: var(--gray);
-   font-size: 14px;
-}
-.bottom img {
-   width: 150px;
-   height: auto;
+@media (max-width: 1200px) {
+   .product,
+   .footer,
+   .bottom {
+      width: 90%;
+   }
+   .footer {
+      gap: 40px;
+   }
+   .card {
+      width: 24%;
+   }
 }
